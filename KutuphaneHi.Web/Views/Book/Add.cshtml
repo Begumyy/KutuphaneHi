@@ -4,7 +4,7 @@
     var yazarListesi = ViewData["authors"] as List<Author>;
     var yayinEviListesi = ViewData["publishers"] as List<Publisher>;
 }
-<form method="post">
+<form class="form" method="post">
     <label asp-for="Name">Book name</label>
     <input asp-for="Name" class="form-control"  placeholder="Please enter a book name" />
 

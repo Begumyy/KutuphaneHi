@@ -16,6 +16,7 @@ namespace KutuphaneHi.Web.Controllers
         public IActionResult Index()
         {
             return View(_context.Books.Include(b=>b.Authors).Include(b => b.Publishers).Include(b=>b.Category).ToList<Book>());
+            //return View(_context.Books.ToList());
         }
 
         [HttpGet]
